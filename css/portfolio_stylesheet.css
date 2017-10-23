@@ -1,4 +1,16 @@
-html, body {
+/*Table of Contents
+  1. Global
+  2. Header
+  3. Hero Image with Quote
+  4. Heading
+  5. Projects
+  6. Footer
+  7. Media Queries*/
+
+
+/*Global*/
+html,
+body {
   height: 100%;
 }
 
@@ -6,109 +18,128 @@ html, body {
   text-align: center;
 }
 
+hr {
+  background: grey;
+  border:0;
+  height: 5px;
+  margin-top: 10px;
+}
+
+/*Header*/
+header {
+  margin-top: 2%;
+}
+
 .page-header {
-  border-width: 5px;
   border-color: grey;
+  border-width: 5px;
+  margin-left: 10px;
+  max-width: 300px;
 }
 
 .logo {
-  width: 65px;
   margin-top: 5px;
+  text-align: left;
+  width: 65px;
 }
 
 .name {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: lighter;
   color: #2d3c49;
-  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 230%;
+  font-weight: lighter;
   margin-bottom: 5px;
   margin-top: 0;
-  font-size: 230%;
+  text-transform: uppercase;
 }
 
 .job-description {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: lighter;
   color: #2d3c49;
-  text-transform: uppercase;
-  margin-top: 5px;
-  margin-bottom: 0;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 150%;
+  font-weight: lighter;
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
+/*Hero Image with Quote*/
 .hero-image {
   margin-bottom: 5px;
 }
 
 .hero-text {
+  left: 6%;
   position: absolute;
   top: 37%;
-  left: 6%;
 }
 
 .hero-quote {
-  text-transform: uppercase;
-  color: white;
-  font-size: 30px;
-  font-family: "Amatic SC", cursive;
   background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
+/*Heading*/
 .heading {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
   color: #7d97ad;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 250%;
+  font-weight: bold;
 }
 
+/*Projects*/
 .project-image {
   margin-top: 15px;
 }
 
 .project-name {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
-  font-size: 200%;
   color: #2d3c49;
-  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 200%;
+  font-weight: bold;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .github-link {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: lighter;
   color: #2d3c49;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
+  font-weight: lighter;
 }
 
+/*Footer*/
 .navbar-bottom {
-  min-height: 60px;
   background-color: #0c7b9a;
+  min-height: 60px;
   margin-top: 60px;
 }
 
 .footer-text {
-  font-family: "Open Sans Condensed", sans-serif;
   color: white;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .footer-text-top {
-  padding-top: 15px;
   margin-bottom: 0;
+  padding-top: 15px;
 }
 
 .footer-text-bottom {
-  padding-bottom: 15px;
   margin-bottom: 0;
+  padding-bottom: 15px;
 }
 
+/*Media Queries*/
 @media screen and (min-width: 400px) {
   .hero-text {
     top: 37%;
   }
 }
 
-/*Change the fontsize of the personal quote according to the screen width*/
 @media screen and (min-width: 480px) and (max-width: 550px) {
   .hero-quote {
     font-size: 40px;
