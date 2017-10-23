@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letitia Kernschmidt</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Use async to speed up page loading; without, the parser is stopped -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
@@ -16,22 +17,24 @@
   <body>
     <main class="container">
       <!-- Includes a header -->
-      <header>
-        <div class="page-header">
-          <div class="pull-left">
-            <img class="logo" src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="Udacity Logo">
+      <header class="row">
+          <div class="col-sm-3">
+            <div class="pull-left">
+              <img class="logo" src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="Udacity Logo">
+            </div>
           </div>
-          <div class="pull-right">
-            <h1 class="name text-right">Letitia Kernschmidt</h1>
-            <h3 class="job-description text-right">Full Stack Web Developer</h3>
+          <div class="col-sm-9">
+            <div class="pull-right">
+              <h1 class="name text-right">Letitia Kernschmidt</h1>
+              <h3 class="job-description text-right">Full Stack Web Developer</h3>
+            </div>
           </div>
-          <div class="clearfix"></div>
-        </div>
       </header>
+      <hr>
       <!-- Includes a hero image with a personal quote -->
       <div class="row">
         <div class="col-sm-12">
-          <img class="hero-image img-rounded img-responsive" src="1.jpg" alt="Portrait of Letitia Kernschmidt">
+          <img class="hero-image img-rounded img-responsive" src="img/1.jpg" alt="Portrait of Letitia Kernschmidt">
           <div class="hero-text"><h2 class="hero-quote">She believed she could, <br> so she did</h2></div>
         </div>
       </div>
@@ -46,28 +49,30 @@
       links currently point to the same project -->
       <div class="row">
         <article class="col-sm-4">
-          <img class="img-rounded img-responsive project-image" src="movies.jpg" alt="Movie Symbol Picture">
+          <img class="img-rounded img-responsive project-image" src="img/movies.jpg" alt="Movie Symbol Picture">
           <h1 class="text-center project-name"> Movie Trailer Website </h1>
           <a class="github-link" target="_blank" href="https://github.com/LetitiaK/Movie-Trailer-Website">View on GitHub</a>
         </article>
         <article class="col-sm-4">
-          <img class="img-rounded img-responsive project-image" src="computer.jpg" alt="Movie Symbol Picture">
+          <img class="img-rounded img-responsive project-image" src="img/computer.jpg" alt="Movie Symbol Picture">
           <h1 class="text-center project-name"> Project 2 </h1>
           <a class="github-link" target="_blank" href="https://github.com/LetitiaK/Movie-Trailer-Website">View on GitHub</a>
         </article>
         <article class="col-sm-4">
-          <img class="img-rounded img-responsive project-image" src="wedding.jpg" alt="Movie Symbol Picture">
+          <img class="img-rounded img-responsive project-image" src="img/wedding.jpg" alt="Movie Symbol Picture">
           <h1 class="text-center project-name"> Project 3 </h1>
           <a class="github-link" target="_blank" href="https://github.com/LetitiaK/Movie-Trailer-Website">View on GitHub</a>
         </article>
       </div>
-    </main>
-    <!-- Includes a footer -->
-    <div class="container">
-      <footer class="navbar-bottom">
-          <p class="text-center footer-text footer-text-top">&#xA9; 2017 Letitia Kernschmidt</p>
-          <p class="text-center footer-text footer-text-bottom">Project Pictures: Jakob Owens, Ilya Pavlov, and Ben Rosett via unsplash.com</p>
+      <!-- Includes a footer -->
+      <footer class="row">
+          <div class="col-sm-12">
+            <div class="navbar-bottom">
+              <p class="text-center footer-text footer-text-top">&#xA9; 2017 Letitia Kernschmidt</p>
+              <p class="text-center footer-text footer-text-bottom">Project Pictures: Jakob Owens, Ilya Pavlov, and Ben Rosett via unsplash.com</p>
+            </div>
+          </div>
       </footer>
-    </div>
+    </main>
   </body>
 </html>
